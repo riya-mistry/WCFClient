@@ -155,6 +155,7 @@
     <Content Include="myreviews.aspx" />
     <Content Include="products\aurora.jpg" />
     <Content Include="products\ayush.jpg" />
+    <Content Include="products\bg.jpg" />
     <Content Include="products\dettol.jpg" />
     <Content Include="products\dove.jpg" />
     <Content Include="products\lifebuoy.jpg" />

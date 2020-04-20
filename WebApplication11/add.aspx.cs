@@ -12,10 +12,22 @@ namespace WebApplication11
         protected void Page_Load(object sender, EventArgs e)
 
         {
+            Dictionary<string, string> products = new Dictionary<string, string>();
+
+            products.Add("S001", "./products/aurora.jpg");
+            products.Add("S002", "./products/ayush.jpg");
+            products.Add("S003", "./products/dettol.jpg");
+            products.Add("S004", "./products/dove.jpg");
+            products.Add("S005", "./products/lifebuoy.jpg");
+            products.Add("S006", "./products/lux.jpg");
+            products.Add("S007", "./products/margo.jpg");
+            products.Add("S008", "./products/olay.jpg");
+            products.Add("S009", "./products/pears.jpg");
             string p = Request.QueryString["q"];
             ServiceReference1.Service1Client client = new ServiceReference1.Service1Client();
             GridView1.DataSource = client.SearchByProduct(p);
             GridView1.DataBind();
+            Image1.ImageUrl = products[p];
 
             
            

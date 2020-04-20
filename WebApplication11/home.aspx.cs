@@ -11,11 +11,7 @@ namespace WebApplication11
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<products> p = new List<products>();
-            p.Add(new products("S0001", "Auroroa", "/aurora.jpeg"));
-            p.Add(new products("S0002", "Ayush", "/aurora.jpeg"));
-
-
+            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
